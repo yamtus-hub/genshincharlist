@@ -30,34 +30,34 @@
   tbody td { padding:8px 9px;font-size:0.8rem;vertical-align:middle; }
   .char-name { font-weight:600;color:#e8d8ff;font-size:0.87rem; }
   .element-badge { display:inline-block;padding:2px 7px;border-radius:12px;font-size:0.67rem;font-weight:700; }
-  .Pyro    { background:#3d1a0f;color:#ff7a40;border:1px solid #7a2e10; }
-  .Hydro   { background:#0d1f3d;color:#45aaff;border:1px solid #1a4d7a; }
-  .Elektro { background:#1e0f3d;color:#b87aff;border:1px solid #5a2e9a; }
-  .Kryo    { background:#0d2a3d;color:#7ae0ff;border:1px solid #1a6a8a; }
-  .Anemo   { background:#0d3d2a;color:#55ffbb;border:1px solid #1a7a55; }
-  .Geo     { background:#3d2d0d;color:#ffcc55;border:1px solid #7a5a10; }
-  .Dendro  { background:#1a3d0d;color:#88ff44;border:1px solid #3a7a10; }
-  .na      { background:#1e1e2a;color:#555;border:1px solid #333; }
+  .Pyro{background:#3d1a0f;color:#ff7a40;border:1px solid #7a2e10;}
+  .Hydro{background:#0d1f3d;color:#45aaff;border:1px solid #1a4d7a;}
+  .Elektro{background:#1e0f3d;color:#b87aff;border:1px solid #5a2e9a;}
+  .Kryo{background:#0d2a3d;color:#7ae0ff;border:1px solid #1a6a8a;}
+  .Anemo{background:#0d3d2a;color:#55ffbb;border:1px solid #1a7a55;}
+  .Geo{background:#3d2d0d;color:#ffcc55;border:1px solid #7a5a10;}
+  .Dendro{background:#1a3d0d;color:#88ff44;border:1px solid #3a7a10;}
+  .na{background:#1e1e2a;color:#555;border:1px solid #333;}
   .const-badge { display:inline-block;background:#1e1e38;border:1px solid #3a3a6a;border-radius:6px;padding:2px 7px;font-size:0.74rem;color:#c8c8f8;font-weight:700; }
-  .const-badge.c6 { background:#2e1a0f;border-color:#7a4a1a;color:#ffaa55; }
-  .const-badge.c5 { background:#1f1a2e;border-color:#5a4a8a;color:#c8a8ff; }
-  .sv   { font-variant-numeric:tabular-nums;color:#c8e8ff; }
-  .svlp { font-variant-numeric:tabular-nums;color:#ff9090; }
-  .svem { font-variant-numeric:tabular-nums;color:#88ff99; }
-  .nd   { color:#3a3a4a;font-style:italic;font-size:0.73rem; }
-  .weapon-normal { color:#ffd070;font-size:0.77rem; }
-  .weapon-sig    { color:#ff5555;font-size:0.77rem;font-weight:700; }
-  .set-name { color:#aaffaa;font-size:0.75rem; }
-  .level    { color:#999;font-size:0.72rem; }
-  .sk     { font-variant-numeric:tabular-nums;font-size:0.78rem;color:#c8c8ff;font-weight:600; }
-  .sk-green { background:#0d3020;color:#55ffaa;border-radius:4px;padding:1px 4px;border:1px solid #1a6040; }
-  .sk-red   { background:#3a0d0d;color:#ff6666;border-radius:4px;padding:1px 4px;border:1px solid #7a2020; }
-  .sk-sep   { color:#333;font-size:0.7rem;margin:0 1px; }
+  .const-badge.c6{background:#2e1a0f;border-color:#7a4a1a;color:#ffaa55;}
+  .const-badge.c5{background:#1f1a2e;border-color:#5a4a8a;color:#c8a8ff;}
+  .sv{font-variant-numeric:tabular-nums;color:#c8e8ff;}
+  .svlp{font-variant-numeric:tabular-nums;color:#ff9090;}
+  .svem{font-variant-numeric:tabular-nums;color:#88ff99;}
+  .nd{color:#3a3a4a;font-style:italic;font-size:0.73rem;}
+  .weapon-normal{color:#ffd070;font-size:0.77rem;}
+  .weapon-sig{color:#ff5555;font-size:0.77rem;font-weight:700;}
+  .set-name{color:#aaffaa;font-size:0.75rem;}
+  .level{color:#999;font-size:0.72rem;}
+  .sk{font-variant-numeric:tabular-nums;font-size:0.78rem;color:#c8c8ff;font-weight:600;}
+  .sk-green{background:#0d3020;color:#55ffaa;border-radius:4px;padding:1px 4px;border:1px solid #1a6040;}
+  .sk-red{background:#3a0d0d;color:#ff6666;border-radius:4px;padding:1px 4px;border:1px solid #7a2020;}
+  .sk-sep{color:#333;font-size:0.7rem;margin:0 1px;}
 </style>
 </head>
 <body>
 <h1>⚔️ Genshin Impact – Meine Charakterübersicht</h1>
-<p class="subtitle">Alle Charaktere · sortierbar · filterbar</p>
+<p class="subtitle">Alle Charaktere · sortierbar · filterbar · Stand: 27.05.2026 (Enka-Daten)</p>
 <p class="legend"><span class="lsig">Rote Waffe ⭐</span> = Signaturwaffe &nbsp;|&nbsp; <span class="lrow">rote Zeile</span> = trägt Signaturwaffe</p>
 <div class="filter-bar">
   <input type="text" id="searchInput" placeholder="🔍 Charakter suchen…" oninput="ft()">
@@ -73,7 +73,7 @@
   </select>
   <select id="levelFilter" onchange="ft()">
     <option value="">Alle Level</option>
-    <option value="0-20">Lv. 1–20</option>
+    <option value="1-20">Lv. 1–20</option>
     <option value="21-40">Lv. 21–40</option>
     <option value="41-50">Lv. 41–50</option>
     <option value="51-60">Lv. 51–60</option>
@@ -108,132 +108,133 @@
 </table>
 </div>
 <script>
-// [name, elem, const, level, lp, atk, def, em, kt, krit, auflade, bonus, waffe, isSig, set, skills]
+// [name, elem, const, level, lp, atk, def, em, kt, krit, ar, bonus, waffe, isSig, set, skills]
 const chars = [
-["Alhaitham",        "Dendro",  0, 90, 20078,1301,827, 385, "64.6%","166.2%","138.2%","90.4% Dendro",  "Licht der schneidenden Blätter",     true,  "2x Besucher d. Labyrinths / 2x Feldjäger", "8/9/8"],
-["Albedo",           "Geo",     0, 90, 19380,1102,3010,89,  "50.1%","139.3%","104.5%","28.8% Geo",      "Ezpitzal-Flöte",                     false, "4x Lied d. Vergänglichkeit",               "3/8/3"],
-["Aloy",             "Kryo",    0, 20, 2928, 86,  182, 0,   "5.0%", "50.0%", "100.0%","–",             "Jagdbogen",                          false, "Keine Artefakte",                          "1/1/1"],
-["Amber",            "Pyro",    2, 20, 7505, 95,  169, 60,  "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                          "1/1/1"],
-["Aino",             "Kryo",    5, 80, 10196,680, 585, 208, "5.0%", "50.0%", "100.0%","–",             "Geschmiedete Weisheit",              false, "2x Herz voller Hoffnung / Mix",            "1/3/1"],
+["Alhaitham",        "Dendro",  0, 90, 20078,1301,827, 385, "64.6%","166.2%","138.2%","90.4% Dendro",  "Licht der schneidenden Blätter",     true,  "2x Besucher d. Labyrinths / 2x Feldjäger","8/9/8"],
+["Albedo",           "Geo",     0, 90, 19380,1102,3010,89,  "50.1%","139.3%","104.5%","28.8% Geo",      "Ezpitzal-Flöte",                     false, "4x Lied d. Vergänglichkeit",              "3/8/3"],
+["Aloy",             "Kryo",    0, 20, 2928, 86,  182, 0,   "5.0%", "50.0%", "100.0%","–",             "Jagdbogen",                          false, "Keine Artefakte",                         "1/1/1"],
+["Amber",            "Pyro",    2, 20, 7505, 95,  169, 60,  "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                         "1/1/1"],
+["Aino",             "Kryo",    5, 80, 10196,680, 585, 208, "5.0%", "50.0%", "100.0%","–",             "Geschmiedete Weisheit",              false, "2x Herz voller Hoffnung / Mix",           "1/3/1"],
 ["Arlecchino",       "Pyro",    3, 100,18814,2361,952, 84,  "78.0%","212.8%","112.3%","46.6% Pyro",     "Form des scharlachroten Mondes",     true,  "3x Vorspiel d. harm. Sinfonie / 1x Gladiator","13/10/10"],
-["Baizhu",           "Dendro",  1, 90, 39228,1369,641, 100, "26.4%","63.2%", "189.8%","15.0% Healing",  "Favonius-Kodex (R5)",                false, "4x Tiefer Palast / Mix",                   "4/8/8"],
-["Barbara",          "Hydro",   6, 70, 13790,880, 596, 23,  "8.1%", "57.0%", "132.5%","36.3% Healing",  "Herzensblick (R5)",                  false, "2x Maid / Mix",                            "4/7/6"],
-["Beidou",           "Elektro", 6, 70, 14277,823, 540, 32,  "5.0%", "57.0%", "129.8%","12.0% Elektro",  "Megamagisches Schwert (R5)",         false, "1x Gladiator / Mix",                       "1/4/4"],
-["Bennett",          "Pyro",    6, 90, 24051,1598,1115,47,  "36.3%","61.2%", "201.1%","–",             "Unheil von Eshu (R5)",               true,  "3x Königliche / Mix",                      "1/8/12"],
-["Candace",          "Hydro",   6, 50, 6112, 136, 362, 0,   "5.0%", "50.0%", "100.0%","–",             "Anfängerlanze",                      false, "Keine Artefakte",                          "1/4/4"],
-["Charlotte",        "Kryo",    6, 80, 15636,1837,781, 37,  "8.9%", "55.4%", "125.3%","15.0% Healing",  "Auge des Gelöbnisses (R5)",          false, "3x Gladiator / Mix",                       "1/6/9"],
-["Chevreuse",        "Pyro",    4, 70, 27555,823, 659, 42,  "27.9%","57.0%", "106.5%","–",             "Schwarze Quaste (R5)",               false, "1x Khvarena / 1x Bergsteiger / Mix",       "1/5/1"],
-["Chongyun",         "Kryo",    4, 25, 3434, 93,  203, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                          "1/1/4"],
-["Citlali",          "Kryo",    0, 90, 17544,588, 958, 770, "15.1%","123.1%","134.3%","–",             "Von den Heldentaten (R5)",           false, "3x Bergsteiger-Mix",                       "6/8/8"],
-["Collei",           "Dendro",  6, 60, 11568,276, 500, 48,  "28.0%","90.4%", "183.0%","–",             "Favonius-Jagdbogen (R5)",            false, "2x Prunkvolles Stichblatt / Mix",          "1/4/4"],
-["Columbina",        "Hydro",   0, 90, 43544,1018,699, 162, "49.1%","180.2%","131.7%","–",             "Nachtmusik im Schleier",             true,  "5x Mondlichtopfer",                        "5/8/8"],
-["Dahlia",           "Hydro",   1, 40, 5208, 297, 233, 0,   "5.0%", "50.0%", "134.3%","–",             "Favonius-Schwert (R5)",              false, "Keine Artefakte",                          "1/1/1"],
-["Dehya",            "Pyro",    2, 20, 4212, 95,  169, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                          "1/1/1"],
-["Diluc",            "Pyro",    3, 80, 19731,1484,920, 417, "73.0%","106.0%","111.0%","15.0% Pyro",     "Zahn d. Bergkönigs",                 false, "4x Brennende Pyrohexe",                    "1/4/2"],
-["Diona",            "Kryo",    6, 80, 14452,715, 821, 181, "10.3%","50.0%", "114.0%","15.0% Healing",  "Wolkenweber (R5)",                   false, "2x Königliche / 2x Maid",                 "3/6/6"],
-["Dori",             "Elektro", 6, 40, 6121, 132, 550, 21,  "5.0%", "50.0%", "109.1%","–",             "Übungsgroßschwert",                  false, "1x Gladiator / 1x Königliche",             "1/4/4"],
-["Émilie",           "Dendro",  0, 90, 22282,2138,986, 23,  "51.9%","124.9%","140.2%","46.6% Dendro",   "Duelllanze (R5)",                    false, "4x Helle Blüte",                           "4/7/7"],
-["Escoffier",        "Kryo",    0, 90, 21318,2216,1202,0,   "44.4%","107.5%","137.1%","35.9% Healing",  "Tamayuratei no Ohanashi (R5)",       false, "4x Königliche Garnitur",                   "1/7/7"],
-["Faruzan",          "Anemo",   6, 50, 5074, 135, 333, 0,   "5.0%", "50.0%", "100.0%","–",             "Jagdbogen",                          false, "Keine Artefakte",                          "1/4/4"],
-["Fischl",           "Elektro", 6, 90, 16721,1926,826, 352, "17.4%","90.4%", "169.3%","–",             "Der Sehnenlose (R5)",                false, "4x Goldpartitur",                          "6/11/9"],
-["Flins",            "Elektro", 1, 95, 19235,2565,1051,218, "49.6%","229.9%","106.5%","–",             "Blutbefleckte Stadt",                true,  "4x Blume d. Wahrheit",                     "7/10/10"],
-["Fréminet",         "Kryo",    6, 60, 7953, 299, 467, 0,   "5.0%", "50.0%", "123.6%","–",             "Favonius-Großschwert (R5)",          false, "Keine Artefakte",                          "4/4/1"],
-["Furina",           "Hydro",   2, 90, 44349,1210,848, 133, "41.7%","138.2%","144.7%","–",             "Pracht des stillen Wassers (R2)",    true,  "4x Goldtruppe",                            "4/9/9"],
-["Gaming",           "Pyro",    3, 20, 3175, 107, 195, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                          "1/1/1"],
-["Gorou",            "Geo",     6, 60, 7316, 755, 619, 33,  "5.0%", "56.2%", "125.2%","12.0% Geo",      "Opferbogen (R5)",                    false, "1x Vorspiel / 1x Tiefer Palast / Mix",    "1/4/4"],
-["Hu Tao",           "Pyro",    1, 90, 34579,1245,1046,21,  "61.4%","210.5%","122.0%","61.6% Pyro",     "Homa-Stab",                          true,  "2x Besucher d. Labyrinths / 2x Brennende Pyrohexe","9/10/9"],
-["Iansan",           "Elektro", 2, 80, 15242,683, 729, 82,  "15.1%","83.4%", "110.4%","–",             "Anfängerlanze",                      false, "1x Talisman / 1x Bergsteiger / Mix",       "1/6/9"],
-["Ifa",              "Anemo",   4, 29, 3431, 84,  206, 0,   "5.0%", "50.0%", "100.0%","–",             "Aufzeichnungen e. Lehrlings",        false, "Keine Artefakte",                          "1/1/4"],
-["Illuga",           "Geo",     1, 70, 17437,554, 822, 327, "49.3%","78.0%", "160.1%","–",             "Drachenschreck (R5)",                false, "4x Kristallträne",                         "1/1/1"],
-["Ineffa",           "Elektro", 0, 90, 19191,2168,1079,84,  "75.1%","204.4%","138.1%","–",             "Zerstreutes Licht",                  true,  "4x Kristallträne",                         "1/9/9"],
-["Jahoda",           "Anemo",   4, 1,  809,  42,  49,  0,   "5.0%", "50.0%", "100.0%","–",             "Jagdbogen",                          false, "Keine Artefakte",                          "1/4/4"],
-["Jean",             "Anemo",   6, 80, 22510,1609,814, 113, "13.6%","144.1%","183.1%","16.6% Healing",  "Favonius-Schwert (R5)",              false, "2x Gladiator / 2x Vorspiel",               "2/7/7"],
-["Kachina",          "Geo",     6, 40, 4914, 113, 330, 0,   "5.0%", "50.0%", "100.0%","–",             "Anfängerlanze",                      false, "Keine Artefakte",                          "1/4/4"],
-["Kaedehara Kazuha", "Anemo",   0, 90, 23340,1241,1213,654, "21.7%","158.8%","122.0%","15.0% Anemo",    "Eisenstich (R2)",                    false, "4x Feldjäger",                             "5/7/6"],
-["Kaeya",            "Kryo",    5, 70, 9733, 475, 612, 21,  "17.0%","88.2%", "113.3%","–",             "Schwert d. Dämmerung (R5)",          false, "3x Berserker",                             "2/5/5"],
-["Kaveh",            "Dendro",  6, 80, 19751,1294,947, 710, "5.0%", "64.0%", "147.3%","46.6% Dendro",   "Eiserne Blume (R5)",                 false, "4x Ay-Khanoum",                            "3/10/10"],
-["Keqing",           "Elektro", 1, 90, 18600,1865,1091,126, "26.0%","212.8%","118.8%","61.6% Elektro",  "Drachenschrei (R5)",                 false, "4x Donnervogel",                           "7/8/7"],
-["Kirara",           "Dendro",  6, 20, 3386, 85,  152, 0,   "5.0%", "50.0%", "100.0%","–",             "Stumpfes Schwert",                   false, "Keine Artefakte",                          "1/4/4"],
-["Klee",             "Pyro",    2, 90, 17226,2145,766, 100, "44.7%","176.7%","146.6%","75.4% Pyro",     "Gebete der Vier Winde (R2)",          true,  "4x Brennende Pyrohexe",                    "7/8/7"],
-["Kujou Sara",       "Elektro", 5, 35, 5545, 185, 346, 47,  "5.0%", "55.0%", "100.0%","15.0% Healing",  "Jagdbogen",                          false, "2x Glorie / Mix",                          "1/4/4"],
-["Kuki Shinobu",     "Elektro", 6, 90, 43304,1264,997, 159, "39.6%","50.0%", "109.7%","–",             "Wolfszahn",                          false, "2x Belobigung / Mix",                      "1/12/11"],
-["Lan Yan",          "Anemo",   5, 1,  775,  634, 49,  0,   "5.0%", "50.0%", "100.0%","–",             "Dodoco-Geschichten (R5)",            false, "Keine Artefakte",                          "1/4/4"],
-["Lauma",            "Dendro",  1, 90, 16211,1141,851, 1223,"22.1%","124.6%","171.2%","–",             "Spiegel des Nachtwebers",            true,  "4x Kristallträne",                         "6/9/7"],
-["Layla",            "Kryo",    6, 40, 4619, 113, 273, 0,   "5.0%", "50.0%", "100.0%","–",             "Stumpfes Schwert",                   false, "Keine Artefakte",                          "1/4/4"],
-["Lisa",             "Elektro", 4, 50, 5332, 163, 304, 44,  "5.0%", "54.2%", "100.0%","–",             "Jadekugel",                          false, "1x Wanderarzt / Mix",                      "1/1/4"],
-["Lynette",          "Anemo",   6, 80, 15767,849, 1042,112, "39.2%","83.4%", "139.2%","79.6% Anemo",    "Favonius-Schwert",                   false, "4x Feldjäger",                             "2/8/8"],
-["Mannekin",         "Geo",     0, 20, 2342, 69,  147, 0,   "5.0%", "50.0%", "100.0%","–",             "Stumpfes Schwert",                   false, "Keine Artefakte",                          "1/1/1"],
-["Mannekina",        "Geo",     0, 20, 2342, 69,  147, 0,   "5.0%", "50.0%", "100.0%","–",             "Stumpfes Schwert",                   false, "Keine Artefakte",                          "1/1/1"],
-["Mika",             "Kryo",    4, 60, 9228, 188, 470, 48,  "5.0%", "50.0%", "100.0%","–",             "Drachenschreck (R5)",                false, "Keine Artefakte",                          "1/1/4"],
-["Mona",             "Hydro",   2, 80, 14917,1540,770, 191, "50.1%","91.2%", "251.9%","–",             "Favonius-Kodex (R5)",                false, "4x Prunkvolles Stichblatt",                "1/4/2"],
-["Nahida",           "Dendro",  0, 90, 18235,1287,1008,841, "5.0%", "56.2%", "149.9%","61.6% Dendro",   "Fließende Träume von tausend Nächten",true, "4x Besucher d. Labyrinths",               "6/8/8"],
-["Nefer",            "Dendro",  0, 90, 19948,1349,966, 688, "39.8%","292.4%","105.2%","–",             "Kästchen der Wahrheit",              true,  "3x Blume d. Wahrheit / 2x Kristallträne",  "7/8/8"],
-["Nicole",           "Pyro",    0, 66, 14570,2476,522, 19,  "10.8%","76.4%", "148.0%","–",             "Sieben Gebote von Staub und Licht",  true,  "4x Himmels-Set / 1x Gladiator",            "4/4/4"],
+["Baizhu",           "Dendro",  1, 90, 44747,1469,641, 100, "26.4%","63.2%", "147.9%","15.0% Healing",  "Bernstein-Prototyp (R2)",            false, "4x Tiefer Palast / Meeresfarben",         "4/8/8"],
+["Barbara",          "Hydro",   6, 70, 13790,880, 596, 23,  "8.1%", "57.0%", "132.5%","36.3% Healing",  "Herzensblick (R5)",                  false, "2x Maid / Mix",                           "4/7/6"],
+["Beidou",           "Elektro", 6, 70, 14277,823, 540, 32,  "5.0%", "57.0%", "129.8%","12.0% Elektro",  "Megamagisches Schwert (R5)",         false, "1x Gladiator / Mix",                      "1/4/4"],
+["Bennett",          "Pyro",    6, 90, 24051,1598,1115,47,  "36.3%","61.2%", "201.1%","–",             "Unheil von Eshu (R5)",               true,  "3x Königliche / Mix",                     "1/8/12"],
+["Candace",          "Hydro",   6, 50, 6112, 136, 362, 0,   "5.0%", "50.0%", "100.0%","–",             "Anfängerlanze",                      false, "Keine Artefakte",                         "1/4/4"],
+["Charlotte",        "Kryo",    6, 80, 15636,1837,781, 37,  "8.9%", "55.4%", "125.3%","15.0% Healing",  "Auge des Gelöbnisses (R5)",          false, "3x Gladiator / Mix",                      "1/6/9"],
+["Chevreuse",        "Pyro",    4, 70, 27555,823, 659, 42,  "27.9%","57.0%", "106.5%","–",             "Schwarze Quaste (R5)",               false, "1x Khvarena / 1x Bergsteiger / Mix",      "1/5/1"],
+["Chongyun",         "Kryo",    4, 25, 3434, 93,  203, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                         "1/1/4"],
+["Citlali",          "Kryo",    0, 90, 17544,588, 958, 770, "15.1%","123.1%","134.3%","–",             "Von den Heldentaten (R5)",           false, "3x Bergsteiger-Mix",                      "6/8/8"],
+["Collei",           "Dendro",  6, 60, 11568,276, 500, 48,  "28.0%","90.4%", "183.0%","–",             "Favonius-Jagdbogen (R5)",            false, "2x Prunkvolles Stichblatt / Mix",         "1/4/4"],
+["Columbina",        "Hydro",   0, 90, 43544,1018,699, 162, "49.1%","180.2%","131.7%","–",             "Nachtmusik im Schleier",             true,  "5x Mondlichtopfer",                       "5/8/8"],
+["Dahlia",           "Hydro",   1, 40, 5208, 297, 233, 0,   "5.0%", "50.0%", "134.3%","–",             "Favonius-Schwert (R5)",              false, "Keine Artefakte",                         "1/1/1"],
+["Dehya",            "Pyro",    2, 20, 4212, 95,  169, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                         "1/1/1"],
+["Diluc",            "Pyro",    3, 80, 19731,1484,920, 417, "73.0%","106.0%","111.0%","15.0% Pyro",     "Zahn d. Bergkönigs",                 false, "4x Brennende Pyrohexe",                   "1/4/2"],
+["Diona",            "Kryo",    6, 80, 14452,715, 821, 181, "10.3%","50.0%", "114.0%","15.0% Healing",  "Wolkenweber (R5)",                   false, "2x Königliche / 2x Maid",                "3/6/6"],
+["Dori",             "Elektro", 6, 40, 6121, 132, 550, 21,  "5.0%", "50.0%", "109.1%","–",             "Übungsgroßschwert",                  false, "1x Gladiator / 1x Königliche",            "1/4/4"],
+["Émilie",           "Dendro",  0, 90, 22282,2138,986, 23,  "51.9%","124.9%","140.2%","46.6% Dendro",   "Duelllanze (R5)",                    false, "4x Helle Blüte",                          "4/7/7"],
+["Escoffier",        "Kryo",    0, 90, 21318,2216,1202,0,   "44.4%","107.5%","137.1%","35.9% Healing",  "Favonius-Lanze (R5)",                false, "4x Königliche Garnitur",                  "1/7/7"],
+["Faruzan",          "Anemo",   6, 50, 5074, 135, 333, 0,   "5.0%", "50.0%", "100.0%","–",             "Jagdbogen",                          false, "Keine Artefakte",                         "1/4/4"],
+["Fischl",           "Elektro", 6, 90, 16721,1926,826, 352, "17.4%","90.4%", "169.3%","–",             "Der Sehnenlose (R5)",                false, "4x Goldpartitur",                         "6/11/9"],
+["Flins",            "Elektro", 1, 95, 19235,2565,1051,218, "49.6%","229.9%","106.5%","–",             "Blutbefleckte Stadt",                true,  "4x Blume d. Wahrheit",                    "7/10/10"],
+["Fréminet",         "Kryo",    6, 60, 7953, 299, 467, 0,   "5.0%", "50.0%", "123.6%","–",             "Favonius-Großschwert (R5)",          false, "Keine Artefakte",                         "4/4/1"],
+["Furina",           "Hydro",   2, 90, 44349,1210,848, 133, "41.7%","138.2%","144.7%","–",             "Pracht des stillen Wassers (R2)",    true,  "4x Goldtruppe",                           "4/9/9"],
+["Gaming",           "Pyro",    3, 20, 3175, 107, 195, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                         "1/1/1"],
+["Gorou",            "Geo",     6, 60, 7316, 755, 619, 33,  "5.0%", "56.2%", "125.2%","12.0% Geo",      "Opferbogen (R5)",                    false, "1x Vorspiel / 1x Tiefer Palast / Mix",   "1/4/4"],
+["Hu Tao",           "Pyro",    1, 90, 34579,1522,1046,21,  "61.4%","210.5%","122.0%","61.6% Pyro",     "Homa-Stab",                          true,  "2x Besucher d. Labyrinths / 2x Brennende Pyrohexe","9/10/9"],
+["Iansan",           "Elektro", 2, 80, 15242,683, 729, 82,  "15.1%","83.4%", "110.4%","–",             "Anfängerlanze",                      false, "1x Talisman / 1x Bergsteiger / Mix",      "1/6/9"],
+["Ifa",              "Anemo",   4, 29, 3431, 84,  206, 0,   "5.0%", "50.0%", "100.0%","–",             "Aufzeichnungen e. Lehrlings",        false, "Keine Artefakte",                         "1/1/4"],
+["Illuga",           "Geo",     1, 70, 17437,554, 822, 327, "49.3%","78.0%", "160.1%","–",             "Drachenschreck (R5)",                false, "4x Kristallträne",                        "1/1/1"],
+["Ineffa",           "Elektro", 0, 90, 19191,2168,1079,84,  "75.1%","204.4%","138.1%","–",             "Zerstreutes Licht",                  true,  "4x Kristallträne",                        "1/9/9"],
+["Jahoda",           "Anemo",   4, 1,  809,  42,  49,  0,   "5.0%", "50.0%", "100.0%","–",             "Jagdbogen",                          false, "Keine Artefakte",                         "1/4/4"],
+["Jean",             "Anemo",   6, 80, 22510,1609,814, 113, "13.6%","144.1%","183.1%","16.6% Healing",  "Favonius-Schwert (R5)",              false, "2x Gladiator / 2x Vorspiel",              "2/7/7"],
+["Kachina",          "Geo",     6, 40, 4914, 113, 330, 0,   "5.0%", "50.0%", "100.0%","–",             "Anfängerlanze",                      false, "Keine Artefakte",                         "1/4/4"],
+["Kaedehara Kazuha", "Anemo",   0, 90, 23340,1241,1213,654, "21.7%","158.8%","122.0%","15.0% Anemo",    "Eisenstich (R2)",                    false, "4x Feldjäger",                            "5/7/6"],
+["Kaeya",            "Kryo",    5, 70, 9733, 475, 612, 21,  "17.0%","88.2%", "113.3%","–",             "Schwert d. Dämmerung (R5)",          false, "3x Berserker",                            "2/5/5"],
+["Kaveh",            "Dendro",  6, 80, 19751,1294,947, 710, "5.0%", "64.0%", "147.3%","46.6% Dendro",   "Eiserne Blume (R5)",                 false, "4x Ay-Khanoum",                           "3/10/10"],
+["Keqing",           "Elektro", 1, 90, 18600,1669,1091,126, "53.6%","212.8%","118.8%","61.6% Elektro",  "Schwarzes Schwert (R5)",             false, "4x Donnervogel",                          "7/8/7"],
+["Kirara",           "Dendro",  6, 20, 3386, 85,  152, 0,   "5.0%", "50.0%", "100.0%","–",             "Stumpfes Schwert",                   false, "Keine Artefakte",                         "1/4/4"],
+["Klee",             "Pyro",    2, 90, 17226,2145,766, 100, "44.7%","176.7%","146.6%","75.4% Pyro",     "Gebete der Vier Winde (R2)",          true,  "4x Brennende Pyrohexe",                   "7/8/7"],
+["Kujou Sara",       "Elektro", 5, 35, 5545, 185, 346, 47,  "5.0%", "55.0%", "100.0%","15.0% Healing",  "Jagdbogen",                          false, "2x Glorie / Mix",                         "1/4/4"],
+["Kuki Shinobu",     "Elektro", 6, 90, 43304,1264,997, 159, "39.6%","50.0%", "109.7%","–",             "Wolfszahn",                          false, "2x Belobigung / Mix",                     "1/12/11"],
+["Lan Yan",          "Anemo",   5, 1,  775,  634, 49,  0,   "5.0%", "50.0%", "100.0%","–",             "Dodoco-Geschichten (R5)",            false, "Keine Artefakte",                         "1/4/4"],
+["Lauma",            "Dendro",  1, 90, 16211,1141,851, 1223,"22.1%","124.6%","171.2%","–",             "Spiegel des Nachtwebers",            true,  "4x Kristallträne",                        "6/9/7"],
+["Layla",            "Kryo",    6, 40, 4619, 113, 273, 0,   "5.0%", "50.0%", "100.0%","–",             "Stumpfes Schwert",                   false, "Keine Artefakte",                         "1/4/4"],
+["Lisa",             "Elektro", 4, 50, 5332, 163, 304, 44,  "5.0%", "54.2%", "100.0%","–",             "Jadekugel",                          false, "1x Wanderarzt / Mix",                     "1/1/4"],
+["Lynette",          "Anemo",   6, 80, 15767,849, 1042,112, "39.2%","83.4%", "139.2%","79.6% Anemo",    "Favonius-Schwert",                   false, "4x Feldjäger",                            "2/8/8"],
+["Mannekin",         "Geo",     0, 20, 2342, 69,  147, 0,   "5.0%", "50.0%", "100.0%","–",             "Stumpfes Schwert",                   false, "Keine Artefakte",                         "1/1/1"],
+["Mannekina",        "Geo",     0, 20, 2342, 69,  147, 0,   "5.0%", "50.0%", "100.0%","–",             "Stumpfes Schwert",                   false, "Keine Artefakte",                         "1/1/1"],
+["Mika",             "Kryo",    4, 60, 9228, 188, 470, 48,  "5.0%", "50.0%", "100.0%","–",             "Drachenschreck (R5)",                false, "Keine Artefakte",                         "1/1/4"],
+["Mona",             "Hydro",   2, 80, 14917,1540,770, 191, "50.1%","91.2%", "251.9%","–",             "Favonius-Kodex (R5)",                false, "4x Prunkvolles Stichblatt",               "1/4/2"],
+["Nahida",           "Dendro",  0, 90, 18235,1287,1008,841, "5.0%", "56.2%", "149.9%","61.6% Dendro",   "Fließende Träume von tausend Nächten",true,"4x Besucher d. Labyrinths",              "6/8/8"],
+["Nefer",            "Dendro",  0, 90, 19948,1349,966, 688, "39.8%","292.4%","105.2%","–",             "Kästchen der Wahrheit",              true,  "3x Blume d. Wahrheit / 2x Kristallträne", "7/8/8"],
+["Nicole",           "Pyro",    0, 66, 14570,2476,522, 19,  "10.8%","76.4%", "148.0%","–",             "Sieben Gebote von Staub und Licht",  true,  "4x Himmels-Set / 1x Gladiator",           "4/4/4"],
 ["Ningguang",        "Geo",     6, 80, 15674,1455,781, 137, "50.5%","95.8%", "108.8%","67.8% Geo",      "Illustrationen (R2)",                false, "1x Splitternde Felsen / 2x Brennende Pyrohexe","5/5/4"],
 ["Noelle",           "Geo",     6, 80, 18846,1348,1769,93,  "27.9%","144.1%","149.7%","42.7% Geo",      "Stolz d. Himmels (R2)",              false, "2x Umschlingende Blume / 2x Lied d. Vergänglichkeit","4/5/9"],
-["Ororon",           "Elektro", 3, 90, 16256,2166,733, 98,  "15.9%","93.5%", "178.7%","46.6% Elektro",  "Favonius-Jagdbogen (R5)",            false, "4x Bergsteiger-Mix / 1x Vorspiel",         "3/8/11"],
-["Prune",            "Anemo",   2, 60, 11587,3078,575, 119, "8.1%", "71.8%", "144.7%","15.0% Anemo",    "Himmelsatlas",                       false, "5x Feldjäger",                             "1/1/1"],
-["Qiqi",             "Kryo",    6, 90, 20280,2438,1241,44,  "18.6%","57.0%", "104.1%","37.2% Healing",  "Flöte (R5)",                         false, "2x Maid / 2x Blutbefleckter",              "6/11/9"],
-["Razor",            "Elektro", 6, 60, 8311, 315, 495, 105, "5.0%", "50.0%", "103.1%","–",             "Drachenblutschwert (R5)",            false, "1x Sinn d. Kameradschaft / Mix",           "1/4/4"],
-["Reisender",        "–",       6, 90, null,null, null,null,"–",    "–",     "–",     "–",             "–",                                  false, "–",                                        "–"],
-["Rosaria",          "Kryo",    6, 76, 13420,1390,760, 107, "52.6%","148.0%","179.7%","–",             "Stab d. roten Sande",                false, "2x Goldpartitur / 2x Feldjäger / Mix",     "1/7/5"],
-["Saccharose",       "Anemo",   6, 85, 14881,1188,716, 719, "36.1%","126.9%","136.9%","39.0% Anemo",    "Fließende Träume von tausend Nächten",false,"5x Feldjäger",                            "4/7/6"],
-["Sayu",             "Anemo",   4, 40, 4937, 125, 310, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                          "1/1/4"],
-["Sethos",           "Elektro", 6, 20, 2721, 86,  156, 0,   "5.0%", "50.0%", "100.0%","–",             "Jagdbogen",                          false, "Keine Artefakte",                          "4/1/4"],
-["Shikanoin Heizou", "Anemo",   2, 20, 2963, 86,  190, 0,   "5.0%", "50.0%", "100.0%","–",             "Aufzeichnungen e. Lehrlings",        false, "Keine Artefakte",                          "1/1/1"],
-["Shougun Raiden",   "Elektro", 0, 90, 21310,1278,967, 690, "60.6%","102.1%","160.5%","–",             "Drachenschreck (R5)",                false, "4x Ay-Khanoum",                            "4/7/8"],
-["Sigewinne",        "Hydro",   0, 90, 52843,1330,619, 168, "32.2%","50.0%", "121.4%","15.0% Healing",  "Tröpfelnde Herzsaiten",              true,  "4x Tiefer Palast / Meeresfarben",          "4/9/9"],
-["Skirk",            "Kryo",    0, 90, 19586,1815,971, 44,  "59.8%","216.7%","114.9%","61.6% Kryo",     "Schwarzes Schwert",                  false, "4x Hallendes Lied d. tiefen Korridore",    "9/9/7"],
-["Thoma",            "Pyro",    6, 90, 34272,1376,1161,0,   "10.9%","50.0%", "198.5%","–",             "Tamayuratei no Ohanashi (R5)",       false, "4x Prunkvolles Stichblatt",                "4/12/11"],
-["Tighnari",         "Dendro",  2, 70, 14334,754, 566, 136, "5.0%", "57.8%", "110.4%","37.2% Dendro",   "Mitternachtswalzer (R2)",            false, "1x Mix (teilw.)",                          "1/4/1"],
-["Venti",            "Anemo",   0, 90, 15819,2168,759, 182, "33.7%","132.2%","201.9%","46.6% Anemo",    "Himmelsflügel",                      true,  "2x Windblume / 2x Brennende Pyrohexe",     "4/5/7"],
-["Wriothesley",      "Kryo",    0, 90, 22210,2073,858, 37,  "27.9%","223.6%","121.4%","46.6% Kryo",     "Landstreichernoten (R5)",            false, "2x Jäger-Mix / 2x Ay-Khanoum",             "8/8/8"],
-["Xiangling",        "Pyro",    6, 80, 17017,1396,738, 367, "21.3%","71.0%", "137.6%","61.6% Pyro",     "Drachenschreck (R5)",                false, "4x Brennende Pyrohexe",                    "3/6/7"],
-["Xilonen",          "Geo",     1, 90, 18231,1482,3903,51,  "27.6%","78.0%", "109.1%","–",             "Lied der Gipfelpatrouille",          false, "4x Bergsteiger-Mix",                       "8/9/8"],
-["Xingqiu",          "Hydro",   6, 90, 16411,1514,1068,131, "19.0%","112.2%","199.2%","20.0% Hydro",    "Opferschwert (R5)",                  false, "4x Prunkvolles Stichblatt",                "6/11/9"],
-["Xinyan",           "Pyro",    6, 40, 4665, 127, 333, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                          "1/4/4"],
-["Yanfei",           "Pyro",    6, 40, 3895, 123, 244, 0,   "5.0%", "50.0%", "100.0%","–",             "Aufzeichnungen e. Lehrlings",        false, "Keine Artefakte",                          "1/4/4"],
-["Yaoyao",           "Dendro",  6, 40, 6041, 193, 361, 0,   "8.9%", "50.0%", "105.8%","–",             "Schwarze Quaste (R5)",               false, "1x Mondlichtopfer / Mix",                  "1/4/4"],
-["Yelan",            "Hydro",   0, 90, 27769,1310,726, 118, "55.3%","69.4%", "241.5%","46.6% Hydro",    "Letzter Seufzer",                    false, "4x Prunkvolles Stichblatt",                "1/6/7"],
-["Yumemizuki Mizuki","Anemo",   1, 90, 13680,342, 1238,153, "34.1%","71.6%", "100.0%","15.0% Anemo",    "Aufzeichnungen e. Lehrlings",        false, "3x Feldjäger / 2x Bergsteiger-Mix",        "1/3/2"],
-["Yun Jin",          "Geo",     6, 80, 16299,671, 1872,40,  "5.0%", "78.8%", "145.9%","30.8% Geo",      "Spuren d. Regenbogens",              false, "4x Lied d. Vergänglichkeit",               "1/5/5"],
-["Zhongli",          "Geo",     0, 90, 54101,1238,919, 58,  "13.2%","91.2%", "131.1%","28.8% Geo",      "Dialoge der Weisen der Wüste (R5)",  false, "2x Belobigung / Mix",                      "5/8/6"],
+["Ororon",           "Elektro", 3, 90, 16256,2166,733, 98,  "15.9%","93.5%", "178.7%","46.6% Elektro",  "Favonius-Jagdbogen (R5)",            false, "4x Bergsteiger-Mix / 1x Vorspiel",        "3/8/11"],
+["Prune",            "Anemo",   2, 60, 11587,3078,575, 119, "8.1%", "71.8%", "144.7%","15.0% Anemo",    "Himmelsatlas",                       false, "5x Feldjäger",                            "1/1/1"],
+["Qiqi",             "Kryo",    6, 90, 20280,2438,1241,44,  "18.6%","57.0%", "104.1%","37.2% Healing",  "Flöte (R5)",                         false, "2x Maid / 2x Blutbefleckter",             "6/11/9"],
+["Razor",            "Elektro", 6, 60, 8311, 315, 495, 105, "5.0%", "50.0%", "103.1%","–",             "Drachenblutschwert (R5)",            false, "1x Sinn d. Kameradschaft / Mix",          "1/4/4"],
+["Reisender",        "–",       6, 90, 17553,1667,733, 115, "16.1%","55.4%", "104.5%","–",             "Schwarzes Schwert",                  false, "Mix",                                     "3/8/11"],
+["Rosaria",          "Kryo",    6, 76, 13420,1390,760, 107, "52.6%","148.0%","179.7%","–",             "Stab d. roten Sande",                false, "2x Goldpartitur / 2x Feldjäger / Mix",    "1/7/5"],
+["Saccharose",       "Anemo",   6, 85, 14881,1188,716, 719, "36.1%","126.9%","136.9%","39.0% Anemo",    "Fließende Träume von tausend Nächten",false,"5x Feldjäger",                           "4/7/6"],
+["Sayu",             "Anemo",   4, 40, 4937, 125, 310, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                         "1/1/4"],
+["Sethos",           "Elektro", 3, 20, 3175, 107, 195, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                         "4/1/4"],
+["Shikanoin Heizou", "Anemo",   2, 20, 2963, 86,  190, 0,   "5.0%", "50.0%", "100.0%","–",             "Aufzeichnungen e. Lehrlings",        false, "Keine Artefakte",                         "1/1/1"],
+["Shougun Raiden",   "Elektro", 0, 90, 21310,1278,967, 690, "60.6%","102.1%","160.5%","–",             "Drachenschreck (R5)",                false, "4x Ay-Khanoum",                           "4/7/8"],
+["Sigewinne",        "Hydro",   0, 90, 52843,1330,619, 168, "32.2%","50.0%", "121.4%","15.0% Healing",  "Tröpfelnde Herzsaiten",              true,  "4x Tiefer Palast / Meeresfarben",         "4/9/9"],
+["Skirk",            "Kryo",    0, 90, 19586,1815,971, 44,  "59.8%","216.7%","114.9%","61.6% Kryo",     "Schwarzes Schwert (R5)",             false, "4x Hallendes Lied d. tiefen Korridore",   "9/9/7"],
+["Thoma",            "Pyro",    6, 90, 34272,1376,1161,0,   "10.9%","50.0%", "198.5%","–",             "Tamayuratei no Ohanashi (R5)",       false, "4x Prunkvolles Stichblatt",               "4/12/11"],
+["Tighnari",         "Dendro",  2, 70, 14334,754, 566, 136, "5.0%", "57.8%", "110.4%","37.2% Dendro",   "Mitternachtswalzer (R2)",            false, "Mix",                                     "1/4/1"],
+["Venti",            "Anemo",   0, 60, 7505, 881, 396, 60,  "5.0%", "50.0%", "153.0%","46.6% Anemo",    "Himmelsflügel",                      true,  "2x Windblume / 2x Brennende Pyrohexe",    "4/5/7"],
+["Wriothesley",      "Kryo",    0, 90, 22210,2073,858, 37,  "27.9%","223.6%","121.4%","46.6% Kryo",     "Landstreichernoten (R5)",            false, "2x Jäger-Mix / 2x Ay-Khanoum",            "8/8/8"],
+["Xiangling",        "Pyro",    6, 90, 17017,1396,738, 367, "21.3%","71.0%", "137.6%","61.6% Pyro",     "Drachenschreck (R5)",                false, "4x Brennende Pyrohexe",                   "3/6/7"],
+["Xilonen",          "Geo",     1, 90, 18231,1482,3903,51,  "27.6%","78.0%", "109.1%","–",             "Lied der Gipfelpatrouille",          false, "4x Bergsteiger-Mix",                      "8/9/8"],
+["Xingqiu",          "Hydro",   6, 90, 16411,1514,1068,131, "19.0%","112.2%","199.2%","20.0% Hydro",    "Opferschwert (R5)",                  false, "4x Prunkvolles Stichblatt",               "6/11/9"],
+["Xinyan",           "Pyro",    6, 40, 4665, 127, 333, 0,   "5.0%", "50.0%", "100.0%","–",             "Übungsgroßschwert",                  false, "Keine Artefakte",                         "1/4/4"],
+["Yanfei",           "Pyro",    6, 40, 3895, 123, 244, 0,   "5.0%", "50.0%", "100.0%","–",             "Aufzeichnungen e. Lehrlings",        false, "Keine Artefakte",                         "1/4/4"],
+["Yaoyao",           "Dendro",  6, 40, 6041, 193, 361, 0,   "8.9%", "50.0%", "105.8%","–",             "Schwarze Quaste (R5)",               false, "1x Mondlichtopfer / Mix",                 "1/4/4"],
+["Yelan",            "Hydro",   0, 90, 27769,1310,726, 58,  "55.3%","129.8%","191.2%","46.6% Hydro",    "Erste große Magie",                  true,  "4x Prunkvolles Stichblatt",               "1/6/7"],
+["Yumemizuki Mizuki","Anemo",   1, 90, 13680,342, 1238,153, "34.1%","71.6%", "100.0%","15.0% Anemo",    "Aufzeichnungen e. Lehrlings",        false, "3x Feldjäger / Mix",                      "1/3/2"],
+["Yun Jin",          "Geo",     6, 80, 16299,671, 1872,40,  "5.0%", "78.8%", "145.9%","30.8% Geo",      "Spuren d. Regenbogens",              false, "4x Lied d. Vergänglichkeit",              "1/5/5"],
+["Zhongli",          "Geo",     0, 90, 54101,1238,919, 58,  "13.2%","91.2%", "131.1%","28.8% Geo",      "Dialoge der Weisen der Wüste (R5)",  false, "2x Belobigung / Mix",                     "5/8/6"],
 ];
 
 const SIG_WEAPONS = new Set([
   "Form des scharlachroten Mondes","Nachtmusik im Schleier","Kästchen der Wahrheit",
-  "Blutbefleckte Stadt","Spiegel des Nachtwebers","Zerstreutes Licht","Drachenschrei",
-  "Licht der schneidenden Blätter","Homa-Stab","Erste große Magie","Pracht des stillen Wassers",
-  "Tröpfelnde Herzsaiten","Fließende Träume von tausend Nächten","Himmelsflügel",
-  "Gebete der Vier Winde","Unheil von Eshu","Lied der Gipfelpatrouille","Landstreichernoten","Sieben Gebote von Staub und Licht",
+  "Blutbefleckte Stadt","Spiegel des Nachtwebers","Zerstreutes Licht",
+  "Licht der schneidenden Blätter","Homa-Stab","Erste große Magie",
+  "Pracht des stillen Wassers","Tröpfelnde Herzsaiten",
+  "Fließende Träume von tausend Nächten","Himmelsflügel",
+  "Gebete der Vier Winde","Unheil von Eshu","Lied der Gipfelpatrouille",
+  "Sieben Gebote von Staub und Licht",
 ]);
 
 function skillCell(raw) {
-  if (!raw || raw === '–') return '<span class="nd">–</span>';
+  if (!raw || raw==='–') return '<span class="nd">–</span>';
   return raw.split('/').map(n => {
     const v = parseInt(n);
-    let cls = 'sk';
-    if (v >= 10) cls += ' sk-red';
-    else if (v >= 8) cls += ' sk-green';
+    let cls='sk';
+    if (v>=10) cls+=' sk-red';
+    else if (v>=8) cls+=' sk-green';
     return `<span class="${cls}">${n}</span>`;
   }).join('<span class="sk-sep">/</span>');
 }
 
-let sortDir = {};
-let currentData = [...chars];
+let sortDir={}, currentData=[...chars];
 
 function pct(v){ return (!v||v==='–') ? -1 : parseFloat(v); }
 
-function renderTable(data) {
-  const tbody = document.getElementById('tableBody');
-  const eb = e => { const c=e&&e!=='–'?e:'na'; return `<span class="element-badge ${c}">${e&&e!=='–'?e:'–'}</span>`; };
-  const cn = c => { const cl=c===6?'c6':c===5?'c5':''; return `<span class="const-badge ${cl}">C${c}</span>`; };
-  const sv  = v => v!=null ? `<span class="sv">${typeof v==='number'?v.toLocaleString('de'):v}</span>` : `<span class="nd">–</span>`;
-  const slp = v => v!=null ? `<span class="svlp">${v.toLocaleString('de')}</span>` : `<span class="nd">–</span>`;
-  const sem = v => (v!=null&&v!==0) ? `<span class="svem">${v}</span>` : `<span class="nd">0</span>`;
-  const sp  = v => v&&v!=='–' ? `<span class="sv">${v}</span>` : `<span class="nd">–</span>`;
-  tbody.innerHTML = data.map(c => {
-    const isSig = c[13];
+function renderTable(data){
+  const tbody=document.getElementById('tableBody');
+  const eb=e=>{const c=e&&e!=='–'?e:'na';return `<span class="element-badge ${c}">${e&&e!=='–'?e:'–'}</span>`;};
+  const cn=c=>{const cl=c===6?'c6':c===5?'c5':'';return `<span class="const-badge ${cl}">C${c}</span>`;};
+  const sv=v=>v!=null?`<span class="sv">${typeof v==='number'?v.toLocaleString('de'):v}</span>`:'<span class="nd">–</span>';
+  const slp=v=>v!=null?`<span class="svlp">${v.toLocaleString('de')}</span>`:'<span class="nd">–</span>';
+  const sem=v=>(v!=null&&v!==0)?`<span class="svem">${v}</span>`:'<span class="nd">0</span>';
+  const sp=v=>v&&v!=='–'?`<span class="sv">${v}</span>`:'<span class="nd">–</span>';
+  tbody.innerHTML=data.map(c=>{
+    const isSig=c[13];
     return `<tr class="${isSig?'sig-row':''}">
       <td class="char-name">${c[0]}</td>
       <td>${eb(c[1])}</td>
@@ -252,37 +253,33 @@ function renderTable(data) {
       <td class="set-name">${c[14]&&c[14]!=='–'?c[14]:'<span class="nd">–</span>'}</td>
     </tr>`;
   }).join('');
-  document.getElementById('countInfo').textContent = `${data.length} von ${chars.length} Charakteren`;
+  document.getElementById('countInfo').textContent=`${data.length} von ${chars.length} Charakteren`;
 }
 
-function ft() {
-  const q   = document.getElementById('searchInput').value.toLowerCase();
-  const ef  = document.getElementById('elemFilter').value;
-  const cf  = document.getElementById('constFilter').value;
-  const lf  = document.getElementById('levelFilter').value;
-  const sig = document.getElementById('sigFilter').checked;
-  currentData = chars.filter(c => {
-    if (!c[0].toLowerCase().includes(q)) return false;
-    if (ef && c[1] !== ef) return false;
-    if (cf && 'C'+c[2] !== cf) return false;
-    if (sig && !c[13]) return false;
-    if (lf) {
-      const [lo, hi] = lf.split('-').map(Number);
-      const lv = c[3] || 0;
-      if (lv < lo || lv > hi) return false;
-    }
+function ft(){
+  const q=document.getElementById('searchInput').value.toLowerCase();
+  const ef=document.getElementById('elemFilter').value;
+  const cf=document.getElementById('constFilter').value;
+  const lf=document.getElementById('levelFilter').value;
+  const sig=document.getElementById('sigFilter').checked;
+  currentData=chars.filter(c=>{
+    if(!c[0].toLowerCase().includes(q))return false;
+    if(ef&&c[1]!==ef)return false;
+    if(cf&&'C'+c[2]!==cf)return false;
+    if(sig&&!c[13])return false;
+    if(lf){const[lo,hi]=lf.split('-').map(Number);const lv=c[3]||0;if(lv<lo||lv>hi)return false;}
     return true;
   });
   renderTable(currentData);
 }
 
-function s(col) {
-  sortDir[col] = !sortDir[col];
-  const d = sortDir[col] ? 1 : -1;
-  currentData.sort((a,b) => {
-    let va=a[col], vb=b[col];
+function s(col){
+  sortDir[col]=!sortDir[col];
+  const d=sortDir[col]?1:-1;
+  currentData.sort((a,b)=>{
+    let va=a[col],vb=b[col];
     if(col===8||col===9||col===10){va=pct(va);vb=pct(vb);}
-    if(va==null)va=-Infinity; if(vb==null)vb=-Infinity;
+    if(va==null)va=-Infinity;if(vb==null)vb=-Infinity;
     if(typeof va==='number'&&typeof vb==='number')return d*(va-vb);
     return d*String(va).localeCompare(String(vb));
   });
